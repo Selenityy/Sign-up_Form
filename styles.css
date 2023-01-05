@@ -1,42 +1,59 @@
 body {
     margin: 0;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 1080px;
+    width: 1920px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #left_side {
-    position: relative;
     display: flex;
+    flex-grow: 1;
     width: 40%;
-    height: 1080px;
+    /* width: max(40vw, 430px);
+    height: clamp(40vh, 1080px, 100vh); */
+    background-image: url("https://images2.alphacoders.com/588/588496.png");
+    object-fit: cover;
+    background-position: center;
 }
 
-.girl {
+/* .girl {
     display: flex;
     position: absolute;
     object-fit: cover;
     width: 100%;
-    height: 1080px;
-}
+    height: clamp(40vh, 1080px, 100vh);
+} */
 
 #background_box {
-    position: absolute;
+    display: flex;
     width: 100%;
-    height: 15%;
-    background-color: #61327a;
-    opacity: .5;
+    height: min(15vh, 755px);
+    background-color: rgb(97, 50, 122, 0.5);
     margin-top: 100px;
 }
 
 .logo {
-    position: absolute;
-    width: 70%;
-    height: auto;
-    padding-left: 60px;
-    padding-top: 78px;
+    display: flex;
+    object-fit: contain;
+    width: 90%;
+    height: 188px;
+    margin-top: -23px;
 }
 
 #right_side {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 2;
     width: 60%;
-    height: 1080px;
+    /* width: max(60vw, 650px);
+    height: clamp(40vh, 1080px, 100vh); */
+    background-color: pink;
+}
+
+.bold_text {
+    font-weight: bold;
 }
