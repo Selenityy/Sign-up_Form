@@ -5,11 +5,16 @@ body {
     flex-wrap: wrap;
     height: 1080px;
     width: 1920px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@font-face {
+    font-family: "Satisfy Regular";
+    src: url("./Satisfy-Regular.woff");
 }
 
 #left_side {
     display: flex;
+    flex-wrap: wrap;
     flex-grow: 1;
     width: 40%;
     /* width: max(40vw, 430px);
@@ -47,13 +52,109 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     flex-grow: 2;
     width: 60%;
     /* width: max(60vw, 650px);
     height: clamp(40vh, 1080px, 100vh); */
-    background-color: pink;
+    /* background-color: pink; */
+    background-color: #FFD5FD;
+    /* padding: 90px; */
 }
 
 .bold_text {
+    display: flex;
+    flex-wrap: wrap;
     font-weight: bold;
+    font-family: "Satisfy Regular";
+    font-size: 1.5rem;
 }
+
+#right_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 400px;
+    height: 20%;
+}
+
+/* #stream {
+    display: flex;
+}
+
+#thanks {
+    display: flex;
+} */
+
+#right_body {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #FFC9FF;
+    height: 30%;
+}
+
+#survey_response {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    width: 50%;
+}
+
+#right_footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    height: 20%;
+}
+
+#Account {
+    display: flex;
+    padding-top: 40px;
+}
+
+#btn {
+    display: flex;
+    border-radius: 12px;
+    width: 250px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #9A48CE;
+    color: white;
+    font-weight: 550;
+    font-family: sans-serif;
+    font-size: 1rem;
+    transition-duration: 0.3s;
+}
+
+#btn:hover {
+    background-color: #7736a1;
+    color: white;
+}
+
+#btn:active {
+    background-color: #7736a1;
+    color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px)
+}
+
+#Login {
+    padding-left: 10px;
+}
+
+a:link, a:visited {
+    color: #9A48CE;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #7736a1;
+    text-decoration: underline;
+}
+
