@@ -93,7 +93,7 @@ body {
     flex-direction: column;
     padding: 40px;
     background-color: #FFC9FF;
-    height: 30%;
+    height: 20%;
 }
 
 #survey_response {
@@ -101,7 +101,51 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 30px;
-    width: 50%;
+    width: 70%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+label {
+    display: flex;
+    text-align: right;
+}
+
+input {
+    font: 1rem sans-serif;
+    width: 250px;
+    box-sizing: border-box;
+    border-color: #7736a1;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: #7736a1;
+}
+
+#footer_button {
+    display: flex;
+    padding-top: 60px;
 }
 
 #right_footer {
